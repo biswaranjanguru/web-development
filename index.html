@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia Quiz</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/594e5dc7b2.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="start">
+        <header>Welcome To Trivia Quiz</header>
+        <form class="name">
+            <label for="fname">Enter Player Name:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+        </form>
+        <button>Start Quiz</button>
+    </div>
+    <div class="info_box">
+        <div class="info_title">
+            <span>Some Rules of the Quiz:</span>
+        </div>
+        <div class="info_list">
+            <div class="info">1. You will only have <span>30 seconds</span> for each question.</div>
+            <div class="info">2. You can select your answer only once.</div>
+            <div class="info">3. You can't select any options once time goes off.</div>
+            <div class="info">4. You can't exit the quiz once started.</div>
+            <div class="info">5. For each correct answer you'll get a point.</div>
+        </div>
+        <div class="buttons">
+            <button class="quit">Exit Quiz</button>
+            <button class="restart">Continue</button>
+        </div>
+    </div>
+
+    <div class="quiz_box">
+        <header>
+            <div class="title">Trivia Quiz Application</div>
+            <div class="timer">
+                <div class="timer_text">Time Left:</div>
+                <div class="timer_sec">30</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="que_text">
+                <!-- <span>What does HTML stands for?</span> -->
+            </div>
+            <div class="option_list">
+                <!-- <div class="option">
+                    <span>Hyper Text Machine Language</span>
+                    <div class="icon cross"><i class="fa-regular fa-circle-xmark" style="color: red;"></i></div>
+                </div>
+                <div class="option">
+                    <span>Hyper Tool Markup Learning</span>
+                    <div class="icon cross"><i class="fa-regular fa-circle-xmark" style="color: red;"></i></div>
+                </div>
+                <div class="option">
+                    <span>Hyper Text Markup Language</span>
+                    <div class="icon tick"><i class="fa-regular fa-circle-check" style="color: rgb(29, 226, 29);"></i></div>
+                </div>
+                <div class="option">
+                    <span>Hyper Text Multiple Language</span>
+                    <div class="icon cross"><i class="fa-regular fa-circle-xmark" style="color: red;"></i></div>
+                </div> -->
+            </div>
+        </section>
+
+        <footer>
+            <div class="total_que">
+                <!-- <span><p>1</p>Of<p>5</p>Questions</span> -->
+            </div>
+            <button class="next_btn">Next Question</button>
+        </footer>
+    </div>
+
+    <div class="result_box">
+        <div class="icon"><i class="fa-solid fa-crown"></i></div>
+        <div class="complete_text">You've completed the Quiz.</div>
+        <div class="score_text">
+            <!-- <span>Sorry!, You got only <p>2</p>out of <p>5</p>.</span> -->
+        </div>
+        <div class="buttons">
+            <button class="restart">Replay Quiz</button>
+            <button class="quit">Quit Quiz</button>
+        </div>
+    </div>
+
+    <script src="quiz.js"></script>
+    <script src="questions.js"></script>
+
+</body>
+
+</html>
+</body>
+
+</html>
